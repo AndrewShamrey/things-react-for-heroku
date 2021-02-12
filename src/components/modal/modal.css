@@ -1,0 +1,102 @@
+.modal-wrapper {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: calc(100vh + 30px);
+  top: -30px;
+  background-color: #57575757;
+  z-index: 2;
+}
+
+.modal-visible {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  width: 35%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid #3F3F3F;
+  background-color: #DCDCDC;
+}
+
+.modal-form {
+  font-size: 0.8rem;
+}
+
+.modal-form label {
+  display: flex;
+  justify-content: space-around;
+  max-width: 420px;
+  margin: 0 auto 5px;
+}
+
+.modal-form label input {
+  height: 26px;
+  width: 160px;
+  padding: 3px 5px;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  background: #fff;
+  overflow-x: scroll;
+}
+
+.modal-form label input.empty-name-value {
+  border: 1px solid red;
+}
+
+.modal-form label input:focus {
+  border: 1px solid #3F3F3F;
+  outline: none;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  height: 30px;
+  margin-top: 5px;
+}
+
+.add-attribute {
+  width: 35%;
+  min-width: 95px;
+  height: 20px;
+  padding: 3px 5px;
+  margin: 5px;
+  border-radius: 5px;
+  background: #3F3F3F;
+  color: #DCDCDC;
+  font-size: 0.8rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  user-select: none;
+}
+
+.add-attribute:hover {
+  background: #575757;
+  color: #fff;
+}
+
+.add-attribute:active {
+  transform: translateY(-2px);
+}
+
+.modal-done {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.modal-done:hover {
+  transform: scale(1.06);
+  filter: invert(0.1);
+}
+
+.modal-done:active {
+  transform: scale(1.06) translateY(-2px);
+  filter: invert(0.1);
+}

@@ -1,0 +1,35 @@
+.all-things-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+  height: 100%;
+  max-height: calc(100vh - 130px);
+  margin: 0 auto;
+  overflow-y: scroll;
+}
+
+.add-thing {
+  width: 50%;
+  height: 30px;
+  min-width: 100px;
+  margin: 5px 0;
+  padding: 7px 10px;
+  border-radius: 5px;
+  background: #3F3F3F;
+  color: #DCDCDC;
+  font-size: 1rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  user-select: none;
+}
+
+.add-thing:hover {
+  background: #575757;
+  color: #fff;
+}
+
+.add-thing:active {
+  transform: translateY(-2px);
+}

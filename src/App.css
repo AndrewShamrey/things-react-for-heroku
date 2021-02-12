@@ -1,0 +1,46 @@
+:root {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+::-webkit-scrollbar { 
+  display: none; 
+}
+
+.App {
+  height: 100vh;
+  padding: 30px;
+  background-color: gainsboro;
+  background-image: url(./images/double-bubble-outline.png);
+}
+
+header {
+  height: 60px;
+  margin-bottom: 10px;
+  color: #3F3F3F;
+  user-select: none;
+}
+
+header h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+header h3 {
+  padding-left: 250px;
+  text-align: center;
+  font-style: italic;
+  opacity: 0.8;
+}
+
+.spinner-gif {
+  display: block;
+  margin: 0 auto;
+}
