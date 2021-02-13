@@ -12,7 +12,7 @@ class DeleteBtn extends React.Component {
         alt="delete"
         title="Delete thing?"
         onClick={() => {
-          fetch("https://safe-garden-89946.herokuapp.com/api/v1/things" + this.props.id, {
+          fetch("https://safe-garden-89946.herokuapp.com/api/v1/things/" + this.props.id, {
             method: "DELETE",
           }).then(() => this.props.forUpdate());
         }}
