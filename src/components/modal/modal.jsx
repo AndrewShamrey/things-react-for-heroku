@@ -159,7 +159,7 @@ class Modal extends React.Component {
     this.setState({ ...buildState() });
     document.querySelector(".other-labels").innerHTML = "";
 
-    fetch("https://safe-garden-89946.herokuapp.com/api/v1/things" + id, {
+    fetch("https://safe-garden-89946.herokuapp.com/api/v1/things/" + id, {
       method: method,
       body: JSON.stringify(newThing),
       headers: {
