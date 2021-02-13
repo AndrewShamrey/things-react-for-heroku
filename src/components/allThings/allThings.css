@@ -12,7 +12,7 @@
 .add-thing {
   width: 50%;
   height: 30px;
-  min-width: 100px;
+  min-width: 165px;
   margin: 5px 0;
   padding: 7px 10px;
   border-radius: 5px;
@@ -32,4 +32,38 @@
 
 .add-thing:active {
   transform: translateY(-2px);
+}
+
+
+@media (max-width: 1000px) {
+  .all-things-wrapper {
+    width: 70%;
+    max-height: calc(100vh - 130px);
+  }
+  
+  .add-thing {
+    width: 70%;
+  }
+}
+
+@media (max-width: 700px) {
+  .all-things-wrapper {
+    width: 80%;
+    max-height: calc(100vh - 95px);
+  }
+}
+
+@media (max-width: 400px) {
+  .all-things-wrapper {
+    width: 95%;
+    max-height: calc(100vh - 55px);
+  }
+
+  .add-thing {
+    width: 50%;
+    height: 20px;
+    min-width: 140px;
+    margin: 0;
+    padding: 3px 7px;
+  }
 }

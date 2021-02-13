@@ -147,7 +147,7 @@ class Modal extends React.Component {
     }
 
     values = validatedValues(values);
-
+    
     const newThing = {};
     for (let i = 0; i < keys.length; i++) {
       newThing[keys[i]] = values[i];
@@ -200,7 +200,9 @@ class Modal extends React.Component {
             <div className="other-labels"></div>
           </form>
           <div className="buttons">
-            <p className="add-attribute" onClick={this.addLabel}>Add attribute?</p>
+            <p className="add-attribute" onClick={this.addLabel}>
+              Add attribute?
+            </p>
             <img
               className="modal-done"
               src={Done}
