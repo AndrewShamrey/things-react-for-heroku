@@ -85,7 +85,6 @@ class Modal extends React.Component {
     const labelsDiv = document.querySelector(".other-labels");
     const label = document.createElement("label");
 
-    /// ------------------------------------------- ///
     const createInput = (name) => {
       const result = document.createElement("input");
       result.classList.add(`input-${name}`);
@@ -160,7 +159,7 @@ class Modal extends React.Component {
     this.setState({ ...buildState() });
     document.querySelector(".other-labels").innerHTML = "";
 
-    fetch("http://localhost:8080/api/v1/things/" + id, {
+    fetch("https://safe-garden-89946.herokuapp.com/api/v1/things" + id, {
       method: method,
       body: JSON.stringify(newThing),
       headers: {
@@ -201,9 +200,7 @@ class Modal extends React.Component {
             <div className="other-labels"></div>
           </form>
           <div className="buttons">
-            <p className="add-attribute" onClick={this.addLabel}>
-              Add attribute?
-            </p>
+            <p className="add-attribute" onClick={this.addLabel}>Add attribute?</p>
             <img
               className="modal-done"
               src={Done}

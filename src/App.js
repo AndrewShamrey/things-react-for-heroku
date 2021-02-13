@@ -15,7 +15,7 @@ class App extends React.Component {
 
   updateThings() {
     this.setState({ isLoading: true });
-    fetch("http://localhost:8080/api/v1/things/")
+    fetch("https://safe-garden-89946.herokuapp.com/api/v1/things")
       .then((response) => {
         return response.json();
       })
